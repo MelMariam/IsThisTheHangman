@@ -127,7 +127,11 @@ void  play() {
     }
 //____________________________________________________________________
   if (answer == code_word)
-  {
+  { 
+    cout << "Code word was:";
+    for (int i = 0; i < answer.length(); i++) {
+          cout << answer[i] << " ";
+    }
     int ch;
     cout << "Hooray! You won!\n\n";
     cout << "Try again? yes - 1, no -2\n\n";  
